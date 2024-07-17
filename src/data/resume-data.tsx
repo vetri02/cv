@@ -1,6 +1,3 @@
-import {
-  Frontier, Elsa
-} from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
@@ -16,7 +13,22 @@ export const RESUME_DATA = {
   contact: {
     email: "vetri@frontier.xyz",
     tel: "",
-    social: [],
+    social: [
+      {
+        name: "GitHub",
+        url: "https://github.com/vetri02",
+        icon: GitHubIcon,
+      },
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/vetri02/",
+        icon: LinkedInIcon,
+      },
+      {
+        name: "X",
+        url: "https://x.com/vetri02",
+        icon: XIcon,
+      }]
   },
   education: [
     {

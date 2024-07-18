@@ -48,7 +48,7 @@ export const RESUME_DATA = {
       start: 2020,
       end: null,
       description:
-        "Led the development of Frontier.xyz, a revolutionary non-custodial multi-chain wallet for the Web3 and DeFi ecosystem\nPioneered the first DeFi Aggregator in the space, significantly enhancing user access to diverse DeFi protocols\nExpanded support to over 70 blockchain networks, establishing Frontier as a leader in multi-chain operability\nArchitected and implemented native DeFi applications, bringing cutting-edge DeFi functionality directly to users\nSpearheaded the development of cross-chain bridges, enabling seamless asset transfer between different blockchains\nDesigned and deployed smart contracts for various platforms, ensuring robust and secure DeFi interactions",
+        "Led the development of Frontier, a revolutionary non-custodial multi-chain wallet for the Web3 and DeFi ecosystem\nPioneered the first DeFi Aggregator in the space, significantly enhancing user access to diverse DeFi protocols\nExpanded support to over 70 blockchain networks, establishing Frontier as a leader in multi-chain operability\nArchitected and implemented native DeFi applications, bringing cutting-edge DeFi functionality directly to users\nSpearheaded the development of cross-chain bridges, enabling seamless asset transfer between different blockchains",
     },
     {
       company: "Elsa",
@@ -59,7 +59,7 @@ export const RESUME_DATA = {
       start: 2024,
       end: null,
       description:
-        "Provided strategic guidance and architectural expertise for Elsa, an AI-powered crypto concierge platform\nAdvised on the development of a sophisticated natural language interface for seamless, intent-based interactions with crypto platforms\nContributed to the design of an advanced multi-chain asset management system supporting diverse blockchain networks\nGuided the implementation of AI-driven market analysis and trading strategy algorithms\nOversaw the architectural design of an automated, intent-based transaction execution system\nAdvised on the integration of NFT wallet functionality and marketplace features\nContributed to the creation of an adaptive educational resource system for crypto concepts",
+        "Provided strategic guidance and architectural expertise for Elsa, an AI-powered crypto concierge platform\nAdvised on the development of a sophisticated natural language interface for seamless, intent-based interactions with crypto platforms\nContributed to the design of an advanced multi-chain asset management system supporting diverse blockchain networks\nGuided the implementation of AI-driven market analysis and trading strategy algorithms\nOversaw the architectural design of an automated, intent-based transaction execution system\nContributed to the creation of an adaptive educational resource system for crypto concepts",
     },
     {
       company: "Selfchain",

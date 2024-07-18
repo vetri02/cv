@@ -1,6 +1,8 @@
 "use client";
 
 import * as React from "react";
+import html2canvas from "html2canvas";
+import jsPDF from "jspdf";
 
 import {
   CommandDialog,
@@ -17,6 +19,35 @@ import { CommandIcon } from "lucide-react";
 interface Props {
   links: { url: string; title: string }[];
 }
+
+const convertToPDF = async () => {
+  // Get the <main> element
+  const mainElement = document.querySelector("main");
+
+  // Check if the element exists
+  if (mainElement) {
+    // Render the <main> element as a canvas image
+    const canvas = await html2canvas(mainElement);
+    const imgData = canvas.toDataURL("image/png");
+
+    // Create a new PDF document
+    const pdf = new jsPDF("p", "mm", "a4");
+
+    // Get the dimensions of the rendered image
+    const imgProps = pdf.getImageProperties(imgData);
+    const pdfWidth = pdf.internal.pageSize.getWidth();
+    const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
+
+    // Add the rendered image to the PDF document
+    pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+
+    // Save the PDF document
+    pdf.save("vetri.pdf");
+  } else {
+    console.error("Main element not found");
+  }
+};
+
 
 export const CommandMenu = ({ links }: Props) => {
   const [open, setOpen] = React.useState(false);
@@ -62,6 +93,14 @@ export const CommandMenu = ({ links }: Props) => {
               }}
             >
               <span>Print</span>
+            </CommandItem>
+            <CommandItem
+              onSelect={() => {
+                setOpen(false);
+                convertToPDF();
+              }}
+            >
+              <span>Convert to PDF</span>
             </CommandItem>
           </CommandGroup>
           {/* <CommandGroup heading="Links">

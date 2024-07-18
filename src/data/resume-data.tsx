@@ -101,9 +101,10 @@ export const RESUME_DATA = {
     "LLM",
     "Machine Learning",
     "Multi-chain",
-    "NFTs",
-    "Cryptocurrency",
-    "Frontend Development",
+    "TypeScript",
+    "Python",
+    "Go",
+    "Rust"
   ],
   projects: [],
   experience: [

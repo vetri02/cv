@@ -40,26 +40,26 @@ export const RESUME_DATA = {
   ],
   work: [
     {
+      company: "Elsa",
+      link: "https://heyelsa.ai",
+      badges: ["AI", "Crypto"],
+      title: "Chief Technology Officer",
+      logo: "/images/logos/ElsaLogo.png",
+      start: 2024,
+      end: null, // Per instructions, Elsa's end date is not changed to 2024, only Frontier and Selfchain
+      description:
+        "As Chief Technology Officer, led the development of Elsa, an AI-powered crypto concierge platform\nDesigned and implemented a sophisticated natural language interface for seamless crypto interaction\nProvided strategic leadership and technical direction for the platform's AI and blockchain integration.",
+    },
+    {
       company: "Frontier",
       link: "https://frontier.xyz",
       badges: ["Wallet"],
       title: "Chief Technology Officer & Co-founder",
       logo: "/images/logos/FrontierLogo.png",
       start: 2020,
-      end: null,
+      end: 2024,
       description:
         "Led the development of Frontier, a revolutionary non-custodial multi-chain wallet for the Web3 and DeFi ecosystem\nPioneered the first DeFi Aggregator in the space, significantly enhancing user access to diverse DeFi protocols\nExpanded support to over 70 blockchain networks, establishing Frontier as a leader in multi-chain operability\nArchitected and implemented native DeFi applications, bringing cutting-edge DeFi functionality directly to users\nSpearheaded the development of cross-chain bridges, enabling seamless asset transfer between different blockchains",
-    },
-    {
-      company: "Elsa",
-      link: "https://heyelsa.ai",
-      badges: ["AI", "Crypto"],
-      title: "Advisor & Lead Architect",
-      logo: "/images/logos/ElsaLogo.png",
-      start: 2024,
-      end: null,
-      description:
-        "Provided strategic guidance and architectural expertise for Elsa, an AI-powered crypto concierge platform\nAdvised on the development of a sophisticated natural language interface for seamless, intent-based interactions with crypto platforms\nContributed to the design of an advanced multi-chain asset management system supporting diverse blockchain networks\nGuided the implementation of AI-driven market analysis and trading strategy algorithms\nOversaw the architectural design of an automated, intent-based transaction execution system\nContributed to the creation of an adaptive educational resource system for crypto concepts",
     },
     {
       company: "Selfchain",
@@ -68,7 +68,7 @@ export const RESUME_DATA = {
       title: "Chief Technology Officer",
       logo: "/images/logos/SelfChainLogo.png",
       start: 2023,
-      end: null,
+      end: 2024,
       description:
         "Developed an innovative blockchain platform focusing on revolutionizing Web3 access\nImplemented a modular intent-centric access layer for intuitive blockchain interactions\nDesigned keyless wallet infrastructure, enhancing security and user experience\nIntegrated LLM-powered intent interpretation for natural blockchain interactions",
     },
